@@ -1,0 +1,230 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	overflow: hidden;
+	width: 100vw;
+	font-family: Verdana, sans-serif;
+	background-color: #242526;
+}
+
+#app-view {
+	margin: auto;
+	width: 80%;
+	height: 100%;
+	border: solid #404040;
+	border-width: 0 1px;
+}
+
+@media screen and (max-width: 1024px) {
+	#app-view {
+	   width: 90%;
+	}
+ }
+ @media screen and (max-width: 768px) {
+	#app-view {
+	   width: 100%;
+	}
+ }
+
+#app-menu {
+	background-color: #242526;
+	border: solid #404040;
+	border-width: 0 0 1px 0;
+	height: 10vh;
+	text-align: center;
+}
+
+.menu-item {
+	background-color: #242526;
+	border-radius: 10px;
+	width: 30%;
+	height: 10vh;
+	font-size: 18px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.menu-item:hover {
+	background-color: #3a3b3c;
+	cursor: pointer;
+}
+
+.menu-item > a {
+	color: white;
+}
+
+.menu-item:hover > a {
+	color: lightskyblue;
+}
+
+.menu-icons {
+	height: 25px;
+	width: 25px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2vh;
+}
+
+#page-view {
+	height: 100%;
+}
+
+.content {
+	height: 100%;
+}
+
+.room-list {
+	overflow: scroll;
+	background-color: #242526;
+	height: 80vh;
+}
+
+.room {
+	display: block;
+	padding: 30px;
+	background-color: #242526;
+}
+
+.room:hover {
+	background-color: #3a3b3c;
+	cursor: pointer;
+}
+
+.room > a {
+	color: white;
+}
+
+.room-icons {
+	height: 25px;
+	width: 25px;
+	vertical-align: middle;
+	padding-right: 10px;
+}
+
+.profile-form {
+	overflow: scroll;
+	height: 80vh;
+	background-color: #242526;
+}
+
+.form-field {
+	display: block;
+	padding: 30px;
+	border: solid #404040;
+	background-color: #242526;
+	color: white;
+	font-size: 14px;
+	border-width: 0 0 1px 0;
+}
+
+.form-label {
+	display: inline-block;
+	width: 20%;
+}
+
+.form-input {
+	height: 36px;
+	line-height: 36px;
+	background-color: #3a3b3c;
+	border: none;
+	color: white;
+	border-radius: 20px;
+	padding-left: 20px;
+}
+
+.room-name {
+	height: 5vh;
+	line-height: 5vh;
+	border: solid #343536;
+	background-color: #242526;
+	color: white;
+	border-width: 0 0 1px 0;
+	padding-left: 20px;
+}
+
+.message-list {
+	overflow: scroll;
+	height: 76vh;
+	background-color: #242526;
+}
+
+.message {
+	display: block;
+	padding: 10px;
+	margin: 10px 30% 10px 10px;
+	border-radius: 15px;
+	background-color: #3e4042;
+	color: white;
+}
+
+.message.my-message {
+	margin: 10px 10px 10px 30%;
+	background-color: #0084ff;
+}
+
+.message-user {
+	display: block;
+	font-size: 12px;
+	color: #b9bbc0;
+}
+
+.message-text {
+	display: block;
+	font-size: 14px;
+	margin-top: 5px;
+}
+
+.page-control {
+	width: 100%;
+	height: 10vh;
+	padding-top: 1vh;
+	background-color: #242526;
+	color: white;
+	text-align: center;
+}
+
+.page-control-input {
+	height: 36px;
+	line-height: 36px;
+	width: 70%;
+	background-color: #3a3b3c;
+	border: none;
+	color: white;
+	border-radius: 20px;
+	font-size: 14px;
+	padding-left: 20px;
+	resize: none;
+	vertical-align: top;
+}
+
+.page-control-button {
+	background-color: #3a3b3c;
+	border: none;
+	color: white;
+	border-radius: 20px;
+	height: 40px;
+	width: 20%;
+	margin-left: 2%;
+	font-size: 14px;
+	vertical-align: top;
+}
+
+.page-control-button:hover {
+	background-color: #4e4f50;
+	cursor: pointer;
+}
